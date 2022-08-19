@@ -101,3 +101,24 @@ a{
     font-size: 4em;
 }
 /* 大图样式结束 */
+
+/* 响应式布局开始 */
+@media all and (min-width: 768px) {
+    .main-content{
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .thumbnail-list{
+        flex-direction: column;
+        order: 0;
+        margin-left: 2em;
+
+    }
+    .thumbnail-item{
+        max-width: 26em;
+    }
+    .thumbnail-item + .thumbnail-item{
+        margin-top: 2em;
+    }
+}
+/* 响应式布局结束 */
