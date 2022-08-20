@@ -102,6 +102,17 @@ a{
 }
 /* 大图样式结束 */
 
+/* 隐藏大图，放大缩略图 */
+.hidden-detail .detail-image-container{
+    display: none;
+}
+.hidden-detail .thumbnail-list{
+    flex-direction: column;
+    align-items: center;
+}
+.hidden-detail .thumbnail-item{
+    max-width: 80%;
+}
 /* 响应式布局开始 */
 @media all and (min-width: 768px) {
     .main-content{
