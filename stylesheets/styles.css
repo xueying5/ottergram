@@ -47,7 +47,7 @@ a{
     order: 2;
     flex: 0 1 auto;
     list-style: none;
-    padding: 0;
+    padding: 2em 0;
     white-space: nowrap;
     overflow-x: auto;
 }
@@ -58,6 +58,11 @@ a{
     max-width: 120px;
     border: 1px solid rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, .8);
+    transition: transform 133ms ease-in-out;
+}
+.thumbnail-item:hover{
+    /* 变形 */
+    transform: scale(1.2);
 }
 /* 
 .thumbnail-item + .thumbnail-item{
@@ -87,6 +92,11 @@ a{
 .detail-image-frame{
     position: relative;
     text-align: center;
+    transition: transform 333ms cubic-bezier(1, .06, .28, 1);
+}
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0s;
 }
 .detail-image{
     width: 90%;
@@ -123,7 +133,7 @@ a{
         flex-direction: column;
         order: 0;
         margin-left: 2em;
-
+        padding: 0 3.5em;
     }
     .thumbnail-item{
         max-width: 26em;
